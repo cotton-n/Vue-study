@@ -16,8 +16,12 @@ export default {
   },
   methods: {
     addTodo: function() {
-      localStorage.setItem(this.newTodoItem, this.newTodoItem);
-      this.clearInput();
+      if (this.newTodoItem !== '') {
+        var obj = { completed: false, item: this.newTodoItem };
+        // obj 안에 어떤값이 있는지 확인하기 위해 JSON.stringify 사용
+        localStorage.setItem(this.newTodoItem, JSON.stringify(obj));
+        this.clearInput();
+      }
     },
     clearInput: function() {
       this.newTodoItem = '';

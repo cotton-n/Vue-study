@@ -5,7 +5,11 @@
       <i class="fas fa-plus addBtn"></i>
     </span>
     <Modal v-if="showModal" @close="showModal = false">
-      <h3 slot="header">경고!</h3>
+      <h3 slot="header">
+        경고!
+        <i class="fas fa-times closeModalBtn" @click="showModal = false"></i>
+      </h3>
+      <div slot="body">아무것도 입력하지 않으셨습니다.</div>
     </Modal>
   </div>
 </template>
@@ -63,5 +67,10 @@ input:focus {
 .addBtn {
   color: white;
   vertical-align: middle;
+}
+.closeModalBtn {
+  position: absolute;
+  top: 5px;
+  right: 0;
 }
 </style>

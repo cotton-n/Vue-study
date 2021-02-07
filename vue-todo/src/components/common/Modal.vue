@@ -15,14 +15,14 @@
             </slot>
           </div>
 
-          <div class="modal-footer">
+          <!-- <div class="modal-footer">
             <slot name="footer">
               default footer
               <button class="modal-default-button" @click="$emit('close')">
                 OK
               </button>
             </slot>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -65,6 +65,7 @@ export default {};
 .modal-header h3 {
   margin-top: 0;
   color: #42b983;
+  position: relative;
 }
 
 .modal-body {

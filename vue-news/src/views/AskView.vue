@@ -1,10 +1,11 @@
 <template>
   <div>
-    <p v-for="item in ask">
-      <a v-bind:href="item.url">
-        {{ item.title }}
-      </a>
-      <small>{{ item.time_ago }} by {{ item.user }}</small>
+    <p v-for="item in ask" :key="item.id">
+      <router-link :to="`/item/${item.id}`">{{ item.title }}</router-link>
+      <small>
+        {{ item.time_ago }} by
+        <router-link :to="`/user/${item.user}`">{{ item.user }}</router-link>
+      </small>
     </p>
   </div>
 </template>

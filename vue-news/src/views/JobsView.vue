@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p v-for="item in jobs">
-      <a v-bind:href="item.url">
+    <p v-for="item in jobs" :key="item.id">
+      <a :href="item.url">
         {{ item.title }}
       </a>
       <small>{{ item.time_ago }}, {{ item.domain }}</small>

@@ -8,4 +8,7 @@ export default {
   SET_LIST(state, list) {
     state.list = list;
   },
+  SET_CLEAR_LIST(state) {
+    state.list = [];
+  },
 };

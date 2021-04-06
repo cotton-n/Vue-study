@@ -62,7 +62,7 @@ a.router-link-exact-active {
 /* Router Transition */
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 0.3s ease;
 }
 .page-enter,
 .page-leave-to {

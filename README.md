@@ -9,7 +9,6 @@
 
 
 ## 📡 vue-news
-### 📹 [데모](https://thirsty-sinoussi-435096.netlify.app)
 ### 🔎 preview
 #### [바로가기](https://github.com/yeji9175/vue-study/tree/main/vue-news)
 <img src="https://user-images.githubusercontent.com/39231606/119635072-4a682d80-be4e-11eb-824a-bd4f1ad5d3f8.PNG" alt="" width="500"/>

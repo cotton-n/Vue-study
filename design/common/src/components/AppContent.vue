@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <li v-for="item in items">
+      <li v-for="item in items" v-bind:key="item">
         {{ item }}
       </li>
     </ul>
@@ -17,5 +17,5 @@ export default {
       required: true,
     },
   },
-}
+};
 </script>

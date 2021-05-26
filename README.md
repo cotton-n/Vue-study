@@ -1,4 +1,6 @@
-# vue-study
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/39231606/119636616-c4e57d00-be4f-11eb-9bba-bcc27cca8257.png" alt="text" width="600" />
+</p>
 
 ## 🗃 vue-todo
 ### 🔎 preview

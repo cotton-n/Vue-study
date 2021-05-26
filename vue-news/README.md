@@ -1,5 +1,5 @@
 # vue-news
-### 📹 [Demo](vue-news-demo.netlify.app)
+### 📹 [Demo](https://vue-news-demo.netlify.app)
 
 ## Project setup
 ```

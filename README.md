@@ -19,3 +19,7 @@
 #### 💻 [Code](https://github.com/yeji9175/vue-study/tree/main/vue-charts/chart-lib)
 <img src="https://user-images.githubusercontent.com/39231606/119635303-83080700-be4e-11eb-8148-de31d8f2cadb.PNG" alt="" width="500"/>
 
+## 🎨 design
+### 🔎 Preview
+#### 💻 [Code](https://github.com/yeji9175/vue-study/tree/main/design)
+

@@ -1,5 +1,5 @@
 # chart-lib
-### 📹 [Demo](https://vue-charts-demo.netlify.app)
+### 📹 [Demo](https://vue-charts-lib-demo.netlify.app)
 
 ## Project setup
 ```

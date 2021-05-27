@@ -1,19 +1,30 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import LoginPage from '@/views/LoginPage.vue';
-import SignupPage from '@/views/SignupPage.vue';
 
 Vue.use(VueRouter);
 
 export default new VueRouter({
+	// 주의사항: 배포 시 서버 설정 필요
+	mode: 'history',
 	routes: [
+		// 초기 진입 페이지 설정
+		{
+			path: '/',
+			redirect: '/login',
+		},
 		{
 			path: '/login',
-			component: LoginPage,
+			// 코드 스플리팅 적용(다이나믹 임포트)
+			component: () => import('@/views/LoginPage.vue'),
 		},
 		{
 			path: '/signup',
-			component: SignupPage,
+			component: () => import('@/views/SignupPage.vue'),
+		},
+		// 없는 페이지에 접근할 때
+		{
+			path: '*',
+			component: () => import('@/views/NotFoundPage.vue'),
 		},
 	],
 });

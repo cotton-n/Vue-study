@@ -1,9 +1,9 @@
 <template>
-	<div>Not Found</div>
+	<div>Page is not found</div>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style scoped></style>
+<style></style>

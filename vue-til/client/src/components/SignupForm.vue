@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { registerUser } from '@/api';
+import { registerUser } from '@/api/auth';
 import { validateEmail } from '@/utils/validation';
 
 export default {

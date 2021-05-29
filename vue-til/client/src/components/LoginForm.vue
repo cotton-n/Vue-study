@@ -45,13 +45,12 @@ export default {
 	methods: {
 		async submitForm() {
 			try {
-				const userData = {
+				// NOTE: await을 해주지 않으면 로직 흐름이 안맞음
+				await this.$store.dispatch('LOGIN', {
 					username: this.username,
 					password: this.password,
-				};
-				// NOTE: await을 해주지 않으면 로직 흐름이 안맞음
-				await this.$store.dispatch('LOGIN', userData);
-				this.$router.push('main');
+				});
+				this.$router.push('/main');
 			} catch (error) {
 				this.logMessage = error.response.data;
 				console.log(error.response);

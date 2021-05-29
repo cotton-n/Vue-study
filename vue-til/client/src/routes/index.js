@@ -25,6 +25,10 @@ export default new VueRouter({
 			path: '/main',
 			component: () => import('@/views/MainPage.vue'),
 		},
+		{
+			path: '/add',
+			component: () => import('@/views/PostAddPage.vue'),
+		},
 		// 없는 페이지에 접근할 때
 		{
 			path: '*',

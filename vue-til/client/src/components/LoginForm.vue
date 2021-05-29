@@ -25,7 +25,6 @@
 </template>
 
 <script>
-import { loginUser } from '@/api';
 import { validateEmail } from '@/utils/validation';
 
 export default {
@@ -50,9 +49,8 @@ export default {
 					username: this.username,
 					password: this.password,
 				};
-				const { data } = await loginUser(userData);
-				this.$store.commit('setUsername', data.user.username);
-				this.$store.commit('setToken', data.token);
+				// NOTE: await을 해주지 않으면 로직 흐름이 안맞음
+				await this.$store.dispatch('LOGIN', userData);
 				this.$router.push('main');
 			} catch (error) {
 				this.logMessage = error.response.data;

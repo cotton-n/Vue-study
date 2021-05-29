@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { setInterceptors } from './common/interceptors';
 
+// axios 초기화
 function createInstance() {
 	const instance = axios.create({
 		baseURL: process.env.VUE_APP_API_URL,
@@ -10,12 +11,19 @@ function createInstance() {
 
 const instance = createInstance();
 
+// 회원가입 API
 function registerUser(data) {
 	return instance.post('signup', data);
 }
 
+// 로그인 API
 function loginUser(data) {
 	return instance.post('login', data);
 }
 
-export { registerUser, loginUser };
+// 학습 노트 데이터를 조회하는 API
+function fetchPosts() {
+	return instance.get('posts');
+}
+
+export { registerUser, loginUser, fetchPosts };

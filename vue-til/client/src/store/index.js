@@ -5,6 +5,7 @@ import {
 	saveUserToCookie,
 	getAuthFromCookie,
 	getUserFromCookie,
+	deleteCookie,
 } from '@/utils/cookies';
 import { loginUser } from '@/api/auth';
 
@@ -43,6 +44,12 @@ export default new Vuex.Store({
 			saveUserToCookie(data.user.username);
 			// NOTE: 안해줘도 프로미스를 반환하지만 명시적으로 데이터를 반환
 			return data;
+		},
+		async LOGOUT({ commit }) {
+			commit('clearUsername');
+			commit('clearToken');
+			deleteCookie('til_auth');
+			deleteCookie('til_user');
 		},
 	},
 });

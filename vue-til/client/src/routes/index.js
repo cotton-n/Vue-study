@@ -16,6 +16,9 @@ const router = new VueRouter({
 		{
 			path: '/login',
 			component: () => import('@/views/LoginPage.vue'),
+			beforeEnter(to, from, next) {
+				store.getters.isLogin ? next('/main') : next();
+			},
 		},
 		{
 			path: '/signup',

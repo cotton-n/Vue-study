@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { setInterceptors } from './common/interceptors';
+import { setInterceptors } from './config/interceptors';
 
 function createInstance() {
 	return axios.create({

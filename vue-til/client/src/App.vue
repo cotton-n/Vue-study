@@ -18,6 +18,6 @@ export default {
 </script>
 
 <style>
-@import './css/reset.css';
-@import './css/common.css';
+@import './assets/css/reset.css';
+@import './assets/css/common.css';
 </style>

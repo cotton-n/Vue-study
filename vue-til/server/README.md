@@ -1,7 +1,4 @@
-# Vue TIL 애플리케이션 Node.js 서버 코드
-
-
-[인프런 Vue.js 끝장내기 강좌](https://www.inflearn.com/course/vue-js-%EB%81%9D%EB%82%B4%EA%B8%B0-%EC%BA%A1%ED%8B%B4%ED%8C%90%EA%B5%90) TIL 애플리케이션의 백엔드 API를 제공하는 Node.js 코드 리포지토리입니다.
+# server
 
 ## 개발 환경
 
@@ -106,7 +103,3 @@ TIL 애플리케이션의 백엔드 API는 아래 주소에서 확인할 수 있
   ```
 
 7. Node.js 서버 재 실행 후 API 동작 여부 확인
-
-## License
-
-MIT - CaptainPangyo

@@ -10,7 +10,7 @@
 			<!-- 1 -->
 			<template v-if="isUserLogin">
 				<a href="javascript:;" @click="logoutUser" class="logout-button">
-					Logout
+					로그아웃
 				</a>
 			</template>
 			<!-- 2 -->
